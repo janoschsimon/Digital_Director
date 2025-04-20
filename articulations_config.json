@@ -1,0 +1,576 @@
+{
+  "miroire": {
+    "instruments": {
+      "Baroque Violin": {
+        "default_articulation": "C0",
+        "keyswitch_offset": 0,
+        "articulations": {
+          "C0": {
+            "name": "Sustains + LEG",
+            "description": "Legato sustained notes",
+            "midi_number": 24,
+            "suitable_for": ["connected_notes", "long_notes", "legato_phrases"]
+          },
+          "C#0": {
+            "name": "Sustains",
+            "description": "Sustained notes without legato",
+            "midi_number": 25,
+            "suitable_for": ["long_notes", "held_chords"]
+          },
+          "D0": {
+            "name": "Sustains soft + LEG",
+            "description": "Softer sustained notes with legato",
+            "midi_number": 26,
+            "suitable_for": ["soft_passages", "quiet_sections", "piano_dynamics"]
+          },
+          "D#0": {
+            "name": "Sustains soft",
+            "description": "Softer sustained notes without legato",
+            "midi_number": 27,
+            "suitable_for": ["soft_passages", "quiet_held_notes"]
+          },
+          "E0": {
+            "name": "Portato + LEG",
+            "description": "Slightly detached notes with legato transitions",
+            "midi_number": 28,
+            "suitable_for": ["moderate_detached_notes", "expressive_passages"]
+          },
+          "F0": {
+            "name": "Portato",
+            "description": "Slightly detached notes",
+            "midi_number": 29,
+            "suitable_for": ["detached_notes", "moderate_speed_passages"]
+          },
+          "F#0": {
+            "name": "Marcato long",
+            "description": "Longer accented notes",
+            "midi_number": 30,
+            "suitable_for": ["accented_passages", "emphasized_notes"]
+          },
+          "G0": {
+            "name": "Marcato short",
+            "description": "Shorter accented notes",
+            "midi_number": 31,
+            "suitable_for": ["short_accented_notes", "rhythmic_passages"]
+          },
+          "G#0": {
+            "name": "Staccato",
+            "description": "Short, detached notes",
+            "midi_number": 32,
+            "suitable_for": ["fast_passages", "rhythmic_sections", "short_notes"]
+          },
+          "A0": {
+            "name": "Staccatissimo",
+            "description": "Very short, heavily detached notes",
+            "midi_number": 33,
+            "suitable_for": ["very_short_notes", "fast_virtuosic_passages"]
+          },
+          "A#0": {
+            "name": "Tremolo",
+            "description": "Rapid alternation of bow direction",
+            "midi_number": 34,
+            "suitable_for": ["tremolo_passages", "dramatic_sections"]
+          },
+          "B0": {
+            "name": "Trills",
+            "description": "Rapid alternation between two adjacent notes",
+            "midi_number": 35,
+            "suitable_for": ["trill_notations", "cadential_trills"]
+          },
+          "C1": {
+            "name": "Ornaments 1",
+            "description": "Baroque ornamentation style 1",
+            "midi_number": 36,
+            "suitable_for": ["cadence_points", "phrase_endings"]
+          },
+          "C#1": {
+            "name": "Ornaments 2",
+            "description": "Baroque ornamentation style 2", 
+            "midi_number": 37,
+            "suitable_for": ["melodic_embellishments"]
+          },
+          "D1": {
+            "name": "Ornaments 3",
+            "description": "Baroque ornamentation style 3",
+            "midi_number": 38,
+            "suitable_for": ["complex_ornamentations"]
+          }
+        }
+      },
+      "Baroque Viola": {
+        "default_articulation": "C0",
+        "keyswitch_offset": 0,
+        "articulations": {
+          "C0": {
+            "name": "Sustains + LEG",
+            "description": "Legato sustained notes",
+            "midi_number": 24,
+            "suitable_for": ["connected_notes", "long_notes", "legato_phrases"]
+          },
+          "C#0": {
+            "name": "Sustains",
+            "description": "Sustained notes without legato",
+            "midi_number": 25,
+            "suitable_for": ["long_notes", "held_chords"]
+          },
+          "D0": {
+            "name": "Sustains soft + LEG",
+            "description": "Softer sustained notes with legato",
+            "midi_number": 26,
+            "suitable_for": ["soft_passages", "quiet_sections", "piano_dynamics"]
+          },
+          "D#0": {
+            "name": "Sustains soft",
+            "description": "Softer sustained notes without legato",
+            "midi_number": 27,
+            "suitable_for": ["soft_passages", "quiet_held_notes"]
+          },
+          "E0": {
+            "name": "Portato + LEG",
+            "description": "Slightly detached notes with legato transitions",
+            "midi_number": 28,
+            "suitable_for": ["moderate_detached_notes", "expressive_passages"]
+          },
+          "F0": {
+            "name": "Portato",
+            "description": "Slightly detached notes",
+            "midi_number": 29,
+            "suitable_for": ["detached_notes", "moderate_speed_passages"]
+          },
+          "F#0": {
+            "name": "Marcato long",
+            "description": "Longer accented notes",
+            "midi_number": 30,
+            "suitable_for": ["accented_passages", "emphasized_notes"]
+          },
+          "G0": {
+            "name": "Marcato short",
+            "description": "Shorter accented notes",
+            "midi_number": 31,
+            "suitable_for": ["short_accented_notes", "rhythmic_passages"]
+          },
+          "G#0": {
+            "name": "Staccato",
+            "description": "Short, detached notes",
+            "midi_number": 32,
+            "suitable_for": ["fast_passages", "rhythmic_sections", "short_notes"]
+          },
+          "A0": {
+            "name": "Staccatissimo",
+            "description": "Very short, heavily detached notes",
+            "midi_number": 33,
+            "suitable_for": ["very_short_notes", "fast_virtuosic_passages"]
+          },
+          "A#0": {
+            "name": "Tremolo",
+            "description": "Rapid alternation of bow direction",
+            "midi_number": 34,
+            "suitable_for": ["tremolo_passages", "dramatic_sections"]
+          },
+          "B0": {
+            "name": "Trills",
+            "description": "Rapid alternation between two adjacent notes",
+            "midi_number": 35,
+            "suitable_for": ["trill_notations", "cadential_trills"]
+          },
+          "C1": {
+            "name": "Ornaments 1",
+            "description": "Baroque ornamentation style 1",
+            "midi_number": 36,
+            "suitable_for": ["cadence_points", "phrase_endings"]
+          },
+          "C#1": {
+            "name": "Ornaments 2",
+            "description": "Baroque ornamentation style 2", 
+            "midi_number": 37,
+            "suitable_for": ["melodic_embellishments"]
+          },
+          "D1": {
+            "name": "Ornaments 3",
+            "description": "Baroque ornamentation style 3",
+            "midi_number": 38,
+            "suitable_for": ["complex_ornamentations"]
+          }
+        }
+      },
+      "Basso Continuo": {
+        "default_articulation": "C6",
+        "keyswitch_offset": 6,
+        "articulations": {
+          "C6": {
+            "name": "Sustains + LEG",
+            "description": "Legato sustained notes",
+            "midi_number": 84,
+            "suitable_for": ["connected_notes", "long_notes", "legato_phrases"]
+          },
+          "C#6": {
+            "name": "Sustains",
+            "description": "Sustained notes without legato",
+            "midi_number": 85,
+            "suitable_for": ["long_notes", "held_chords"]
+          },
+          "D6": {
+            "name": "Sustains soft + LEG",
+            "description": "Softer sustained notes with legato",
+            "midi_number": 86,
+            "suitable_for": ["soft_passages", "quiet_sections", "piano_dynamics"]
+          },
+          "D#6": {
+            "name": "Sustains soft",
+            "description": "Softer sustained notes without legato",
+            "midi_number": 87,
+            "suitable_for": ["soft_passages", "quiet_held_notes"]
+          },
+          "E6": {
+            "name": "Portato + LEG",
+            "description": "Slightly detached notes with legato transitions",
+            "midi_number": 88,
+            "suitable_for": ["moderate_detached_notes", "expressive_passages"]
+          },
+          "F6": {
+            "name": "Portato",
+            "description": "Slightly detached notes",
+            "midi_number": 89,
+            "suitable_for": ["detached_notes", "moderate_speed_passages"]
+          },
+          "F#6": {
+            "name": "Marcato long",
+            "description": "Longer accented notes",
+            "midi_number": 90,
+            "suitable_for": ["accented_passages", "emphasized_notes"]
+          },
+          "G6": {
+            "name": "Marcato short",
+            "description": "Shorter accented notes",
+            "midi_number": 91,
+            "suitable_for": ["short_accented_notes", "rhythmic_passages"]
+          },
+          "G#6": {
+            "name": "Staccato",
+            "description": "Short, detached notes",
+            "midi_number": 92,
+            "suitable_for": ["fast_passages", "rhythmic_sections", "short_notes"]
+          },
+          "A6": {
+            "name": "Staccatissimo",
+            "description": "Very short, heavily detached notes",
+            "midi_number": 93,
+            "suitable_for": ["very_short_notes", "fast_virtuosic_passages"]
+          },
+          "A#6": {
+            "name": "Tremolo",
+            "description": "Rapid alternation of bow direction",
+            "midi_number": 94,
+            "suitable_for": ["tremolo_passages", "dramatic_sections"]
+          },
+          "B6": {
+            "name": "Trills",
+            "description": "Rapid alternation between two adjacent notes",
+            "midi_number": 95,
+            "suitable_for": ["trill_notations", "cadential_trills"]
+          },
+          "C7": {
+            "name": "Ornaments 1",
+            "description": "Baroque ornamentation style 1",
+            "midi_number": 96,
+            "suitable_for": ["cadence_points", "phrase_endings"]
+          },
+          "C#7": {
+            "name": "Ornaments 2",
+            "description": "Baroque ornamentation style 2", 
+            "midi_number": 97,
+            "suitable_for": ["melodic_embellishments"]
+          }
+        }
+      },
+      "French Harpsichord": {
+        "default_articulation": "C6",
+        "keyswitch_offset": 0,
+        "articulations": {
+          "C6": {
+            "name": "Sustains 2x8 1x4",
+            "description": "Standard harpsichord registration",
+            "midi_number": 84,
+            "suitable_for": ["general_playing", "continuo"]
+          },
+          "C#6": {
+            "name": "Staccato 2x8 1x4",
+            "description": "Short detached harpsichord notes",
+            "midi_number": 85,
+            "suitable_for": ["fast_passages", "ornamental_figures"]
+          },
+          "D6": {
+            "name": "Sustains 2x8",
+            "description": "Two 8-foot stops sustained",
+            "midi_number": 86,
+            "suitable_for": ["medium_passages", "accompaniment"]
+          },
+          "D#6": {
+            "name": "Staccato 2x8",
+            "description": "Short detached with two 8-foot stops",
+            "midi_number": 87,
+            "suitable_for": ["dance_movements", "rhythmic_patterns"]
+          },
+          "E6": {
+            "name": "Sustains front 8",
+            "description": "Front 8-foot stop only",
+            "midi_number": 88,
+            "suitable_for": ["softer_passages", "gentle_accompaniment"]
+          },
+          "F6": {
+            "name": "Staccato front 8",
+            "description": "Short detached with front 8-foot stop",
+            "midi_number": 89,
+            "suitable_for": ["light_passages", "delicate_ornaments"]
+          },
+          "F#6": {
+            "name": "Sustains back 8",
+            "description": "Back 8-foot stop only",
+            "midi_number": 90,
+            "suitable_for": ["mellow_passages", "darker_timbre"]
+          },
+          "G6": {
+            "name": "Staccato back 8",
+            "description": "Short detached with back 8-foot stop",
+            "midi_number": 91,
+            "suitable_for": ["articulated_bass_lines", "counter_melodies"]
+          },
+          "G#6": {
+            "name": "Sustains Harp stop",
+            "description": "With harp stop (buff stop) engaged",
+            "midi_number": 92,
+            "suitable_for": ["special_effects", "lute_like_passages"]
+          },
+          "A6": {
+            "name": "Staccato Harp stop",
+            "description": "Short notes with harp stop engaged",
+            "midi_number": 93,
+            "suitable_for": ["plucked_sounds", "special_effects"]
+          },
+          "A#6": {
+            "name": "Staccato fx",
+            "description": "Special effects staccato",
+            "midi_number": 94,
+            "suitable_for": ["special_articulations", "unique_passages"]
+          }
+        }
+      },
+      "Baroque Male Choir": {
+        "default_articulation": "C0",
+        "keyswitch_offset": 0,
+        "articulations": {
+          "C0": {
+            "name": "Sustains + LEG",
+            "description": "Legato sustained notes",
+            "midi_number": 24,
+            "suitable_for": ["connected_vocal_notes", "long_vocal_phrases"]
+          },
+          "C#0": {
+            "name": "Sustains",
+            "description": "Sustained notes without legato",
+            "midi_number": 25,
+            "suitable_for": ["long_vocal_notes", "sustained_chords"]
+          },
+          "D0": {
+            "name": "Syllables long",
+            "description": "Long syllables for text underlay",
+            "midi_number": 26,
+            "suitable_for": ["text_setting", "melismas"]
+          },
+          "D#0": {
+            "name": "Syllables marcato",
+            "description": "Accented syllables for text",
+            "midi_number": 27,
+            "suitable_for": ["emphasized_syllables", "accented_text"]
+          },
+          "E0": {
+            "name": "Syllables short",
+            "description": "Short syllables for text",
+            "midi_number": 28,
+            "suitable_for": ["fast_text_passages", "recitatives"]
+          },
+          "F0": {
+            "name": "Syllables short (time-aligned)",
+            "description": "Tempo-synced short syllables",
+            "midi_number": 29,
+            "suitable_for": ["rhythmic_text", "precise_timing_passages"]
+          }
+        }
+      },
+      "Baroque Female Choir": {
+        "default_articulation": "C0",
+        "keyswitch_offset": 0,
+        "articulations": {
+          "C0": {
+            "name": "Sustains + LEG",
+            "description": "Legato sustained notes",
+            "midi_number": 24,
+            "suitable_for": ["connected_vocal_notes", "long_vocal_phrases"]
+          },
+          "C#0": {
+            "name": "Sustains",
+            "description": "Sustained notes without legato",
+            "midi_number": 25,
+            "suitable_for": ["long_vocal_notes", "sustained_chords"]
+          },
+          "D0": {
+            "name": "Syllables long",
+            "description": "Long syllables for text underlay",
+            "midi_number": 26,
+            "suitable_for": ["text_setting", "melismas"]
+          },
+          "D#0": {
+            "name": "Syllables marcato",
+            "description": "Accented syllables for text",
+            "midi_number": 27,
+            "suitable_for": ["emphasized_syllables", "accented_text"]
+          },
+          "E0": {
+            "name": "Syllables short",
+            "description": "Short syllables for text",
+            "midi_number": 28,
+            "suitable_for": ["fast_text_passages", "recitatives"]
+          },
+          "F0": {
+            "name": "Syllables short (time-aligned)",
+            "description": "Tempo-synced short syllables",
+            "midi_number": 29,
+            "suitable_for": ["rhythmic_text", "precise_timing_passages"]
+          }
+        }
+      }
+    },
+    "instrument_mapper": {
+      "Baroque Violin": ["Baroque Violin", "Violin", "violino"],
+      "Baroque Viola": ["Baroque Viola", "Viola", "viola"],
+      "Basso Continuo": ["Basso Continuo", "Cello", "Violoncello", "continuo", "basso"],
+      "French Harpsichord": ["French Harpsichord", "Harpsichord", "Cembalo", "Clavecin", "clav", "clavicembalo", "cemb"],
+      "Baroque Male Choir": ["Male Choir", "Tenor", "Bass"],
+      "Baroque Female Choir": ["Female Choir", "Soprano", "Alto"]
+    },
+    "articulation_rules": {
+      "strings": {
+        "default": "C0",
+        "note_length_thresholds": {
+          "very_short": 240,  
+          "short": 480,       
+          "medium": 960,      
+          "long": 1920        
+        },
+        "rules": [
+          {
+            "condition": "avg_note_length < very_short",
+            "articulation": "G#0",  
+            "description": "Kurze Staccato-Passagen"
+          },
+          {
+            "condition": "avg_note_length < short and avg_velocity > 80",
+            "articulation": "G0",   
+            "description": "Kurze betonte Noten"
+          },
+          {
+            "condition": "avg_note_length < short and interval_size <= 4",
+            "articulation": "E0",   
+            "description": "Leicht detachierte Passagen mit kleinen Intervallen"
+          },
+          {
+            "condition": "interval_size <= 3 and avg_note_length >= medium",
+            "articulation": "C0",   
+            "description": "Legato-Linien"
+          },
+          {
+            "condition": "interval_size <= 4 and avg_velocity < 75",
+            "articulation": "D0",   
+            "description": "Leise Legato-Linien"
+          },
+          {
+            "condition": "avg_note_length >= medium and avg_velocity < 75",
+            "articulation": "D#0",  
+            "description": "Leise lang gehaltene Noten"
+          },
+          {
+            "condition": "avg_note_length >= medium and avg_velocity >= 80",
+            "articulation": "F#0",  
+            "description": "Betonte lang gehaltene Noten"
+          },
+          {
+            "condition": "interval_size > 7",
+            "articulation": "A0",
+            "description": "Große Intervallsprünge mit Staccatissimo"
+          },
+          {
+            "condition": "avg_velocity > 100",
+            "articulation": "F#0",
+            "description": "Sehr laute Passagen mit Marcato"
+          }
+        ]
+      },
+      "choir": {
+        "default": "C0",
+        "note_length_thresholds": {
+          "short": 480,       
+          "medium": 960,      
+          "long": 1920        
+        },
+        "rules": [
+          {
+            "condition": "avg_note_length < short",
+            "articulation": "E0",   
+            "description": "Kurze Silben"
+          },
+          {
+            "condition": "avg_note_length >= long",
+            "articulation": "D0",   
+            "description": "Lange Silben"
+          },
+          {
+            "condition": "avg_velocity > 90",
+            "articulation": "D#0",  
+            "description": "Betonte Silben"
+          },
+          {
+            "condition": "interval_size <= 2 and note_count >= 3",
+            "articulation": "C0",   
+            "description": "Legato-Gesangslinien"
+          }
+        ]
+      },
+      "harpsichord": {
+        "default": "C6",
+        "note_length_thresholds": {
+          "very_short": 240,
+          "short": 480,
+          "medium": 960,
+          "long": 1920
+        },
+        "rules": [
+          {
+            "condition": "avg_note_length < very_short",
+            "articulation": "C#6",
+            "description": "Kurze Staccato-Passagen für Cembalo"
+          },
+          {
+            "condition": "avg_note_length < short and avg_velocity > 90",
+            "articulation": "D#6",
+            "description": "Kurze betonte Cembalo-Noten"
+          },
+          {
+            "condition": "avg_note_length < short and interval_size <= 2",
+            "articulation": "F6",
+            "description": "Leichte Front-8-Staccato für zarte Passagen"
+          },
+          {
+            "condition": "avg_note_length >= medium and avg_velocity < 70",
+            "articulation": "F#6",
+            "description": "Sanfte Back-8-Sustains für weiche Passagen"
+          },
+          {
+            "condition": "avg_note_length >= long",
+            "articulation": "C6",
+            "description": "Volle 2x8 1x4-Registration für lange Noten"
+          }
+        ]
+      }
+    }
+  }
+}

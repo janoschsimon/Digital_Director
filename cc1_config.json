@@ -1,0 +1,102 @@
+{
+  "dynamic_range": {
+    "min": 30,
+    "max": 115
+  },
+  "role_factors": {
+    "melody": 1.15,
+    "bass": 1.05,
+    "inner_voice": 1.0,
+    "unknown": 1.0
+  },
+  "curve_points": {
+    "local_peak": {
+      "rise_point": 0.15,
+      "peak_point": 0.3,
+      "fall_point": 0.45,
+      "rise_factor": 1.03,
+      "peak_factor": 1.08,
+      "fall_factor": 1.04
+    },
+    "phrase_start": {
+      "time_points": [0.2, 0.3, 0.4],
+      "value_factors": [1.02, 1.04, 1.05]
+    },
+    "phrase_end": {
+      "time_points": [0.3, 0.5, 0.7],
+      "value_factors": [0.98, 0.93, 0.88]
+    },
+    "note_decay": {
+      "short_note": {
+        "end_factor": 0.90
+      },
+      "long_note": {
+        "time_points": [0.85, 0.93, 1.0],
+        "value_factors": [0.96, 0.93, 0.90]
+      },
+      "min_duration": 15
+    },
+    "bass_patterns": [
+      {
+        "time_points": [0.25, 0.5, 0.75],
+        "value_factors": [0.97, 0.95, 0.93]
+      }
+    ],
+    "long_note_patterns": [
+      {
+        "name": "crescendo-diminuendo",
+        "time_points": [0.2, 0.4, 0.6, 0.8],
+        "value_factors": [0.98, 1.03, 1.03, 0.96]
+      },
+      {
+        "name": "vibrato",
+        "time_points": [0.2, 0.35, 0.5, 0.65, 0.8],
+        "value_factors": [1.02, 0.99, 1.03, 0.98, 1.01]
+      },
+      {
+        "name": "diminuendo",
+        "time_points": [0.25, 0.5, 0.75],
+        "value_factors": [0.99, 0.97, 0.95]
+      }
+    ],
+    "long_note_min_duration": 20
+  },
+  "filtering": {
+    "thresholds": {
+      "fast_change": {
+        "rate": 0.4,
+        "time_gap": 4,
+        "value_diff": 2
+      },
+      "moderate_change": {
+        "rate": 0.2,
+        "time_gap": 6,
+        "value_diff": 3
+      },
+      "slow_change": {
+        "time_gap": 10,
+        "value_diff": 4
+      }
+    },
+    "important_points": {
+      "window_size": 5
+    }
+  },
+  "velocity_mapping": {
+    "very_low": {
+      "threshold": 20,
+      "min_value": 30
+    },
+    "low": {
+      "threshold": 40,
+      "slope": 1.5
+    },
+    "mid": {
+      "threshold": 80,
+      "range": 40
+    },
+    "high": {
+      "range": 35
+    }
+  }
+}

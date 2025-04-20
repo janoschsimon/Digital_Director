@@ -1,0 +1,171 @@
+{
+  "rules": {
+    "melody": {
+      "phrase_start": {
+        "enabled": true,
+        "params": {
+          "first_note_timing_factor": 0.7,
+          "second_note_timing_factor": -0.3,
+          "velocity_increase_factor": 0.07,
+          "min_duration": 3,
+          "phrase_position_threshold": 0.1
+        }
+      },
+      "phrase_end": {
+        "enabled": true,
+        "params": {
+          "timing_delay_factor": 0.8,
+          "velocity_decrease_factor": 0.05,
+          "length_increase_factor": 0.1,
+          "length_increase_threshold": 480
+        }
+      },
+      "pre_leap": {
+        "enabled": true,
+        "params": {
+          "up_acceleration_factor": -0.1,
+          "down_delay_factor": 0.15,
+          "reduction_factor": 0.12,
+          "interval_threshold": 3,
+          "min_duration": 3
+        }
+      },
+      "accelerando": {
+        "enabled": true,
+        "params": {
+          "timing_acceleration_factor": -0.7,
+          "min_notes_sequence": 3,
+          "interval_threshold": 2
+        }
+      },
+      "sequence_accel": {
+        "enabled": true,
+        "params": {
+          "acceleration_factor": -0.6,
+          "pattern_detection_window": 5,
+          "max_acceleration": -0.9,
+          "dynamic_increase": 0.05
+        }
+      },
+      "directional_timing": {
+        "enabled": true,
+        "params": {
+          "up_acceleration_factor": -0.5,
+          "down_delay_factor": 0.4,
+          "interval_threshold": 2,
+          "velocity_adjustment": 0.04
+        }
+      },
+      "local_peak": {
+        "enabled": true,
+        "params": {
+          "timing_delay_factor": 0.9,
+          "velocity_increase_factor": 0.15
+        }
+      },
+      "downbeat": {
+        "enabled": true,
+        "params": {
+          "timing_delay_factor": 0.5,
+          "velocity_increase_factor": 0.1
+        }
+      },
+      "short_note": {
+        "enabled": true,
+        "params": {
+          "very_short_reduction": 0.05,
+          "short_reduction": 0.08,
+          "velocity_increase": 0.06,
+          "very_short_threshold": 0.0625,
+          "short_threshold": 0.125
+        }
+      },
+      "long_note": {
+        "enabled": true,
+        "params": {
+          "velocity_increase": 0.05,
+          "threshold": 1.0
+        }
+      }
+    },
+    "bass": {
+      "bass_downbeat": {
+        "enabled": true,
+        "params": {
+          "timing_delay_factor": 0.3,
+          "velocity_increase_factor": 0.08
+        }
+      },
+      "bass_short": {
+        "enabled": true,
+        "params": {
+          "very_short_reduction": 0.06,
+          "short_reduction": 0.08,
+          "min_duration_factor": 0.12,
+          "min_duration_absolute": 4
+        }
+      },
+      "bass_repeated": {
+        "enabled": true,
+        "params": {
+          "velocity_variation": 0.05,
+          "duration_variation": 0.03,
+          "min_duration_factor": 0.15,
+          "min_duration_absolute": 4,
+          "acceleration_factor": -0.04,
+          "max_acceleration": -0.2,
+          "repetition_threshold": 3
+        }
+      },
+      "bass_phrase_end": {
+        "enabled": true,
+        "params": {
+          "length_increase_factor": 0.15,
+          "min_duration_threshold": 1.0
+        }
+      }
+    },
+    "inner": {
+      "inner_base_velocity": {
+        "enabled": true,
+        "params": {
+          "velocity_decrease_factor": 0.05
+        }
+      },
+      "inner_contour": {
+        "enabled": true,
+        "params": {
+          "velocity_increase_factor": 0.08
+        }
+      },
+      "inner_consonant": {
+        "enabled": true,
+        "params": {
+          "length_increase_factor": 0.05,
+          "consonant_intervals": [3, 4, 7, 8, 9]
+        }
+      },
+      "inner_timing_flow": {
+        "enabled": true,
+        "params": {
+          "max_variation_factor": 0.5
+        }
+      },
+      "inner_short_note": {
+        "enabled": true,
+        "params": {
+          "very_short_reduction": 0.02,
+          "short_reduction": 0.05,
+          "min_duration_factor": 0.15,
+          "min_duration": 5
+        }
+      }
+    }
+  },
+  "global_settings": {
+    "timing_direction_bias": -0.3,
+    "melodic_importance": 1.0,
+    "bass_importance": 0.85,
+    "inner_voice_importance": 0.7
+  }
+}
